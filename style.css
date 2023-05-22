@@ -1,0 +1,71 @@
+* { color: #404040; font-family: "Jost", sans-serif; padding: 0; margin: 0; }
+
+/*Float*/
+.fr { float: right; }
+.fl { float: left; }
+
+/*list*/
+ul { list-style-type: none; height: 48px; }
+li { list-style-type: none; }
+
+/*header*/
+header { width: 100%; position: fixed; top: 0; height: 80px; z-index: 1000; background-color: white;}
+
+/*nav*/
+a { text-decoration: none; }
+.finder { height: 47px; width: 60vw; border-radius: 50px; }
+.arrowDown { color: #5f5f5f;  border-radius: 50px; fill: #5f5f5f; }
+.down { padding-left: 6px; }
+.logoPinterest { fill: #e60023; }
+.navIcon { display: flex; align-items: center; }
+.pNav { font-size: 16px;}
+.imageProfile { border-radius: 50px; }
+.campanaIcon { fill: #5f5f5f; }
+.navButton { display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 17px; }
+  input[type=text] {
+    border: 0;
+    background-color: #dadada; 
+    box-sizing: border-box;
+    color: #191919;
+    padding: 0 20px;
+  }
+  ::placeholder {
+    font-size: 16px;
+  }
+  /*main*/
+  main { margin-top: 80px; z-index: 1;}
+  .grid-conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .grid-item82{
+    width: 230px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+  }
+  .grid-item82:hover{
+    filter: opacity(0.9);
+  }
+
+
+/*Media query*/
+
+@media (max-width: 1200px) {
+	.finder { width: 50vw; }
+}
+@media (max-width: 992px) {	
+	.finder { width: 40vw; }
+}
+@media (max-width: 768px) {
+	.finder { width: 30vw; }
+}
+
